@@ -1,0 +1,258 @@
+ 
+
+ html {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  *,*::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+  } 
+
+  .container{ 
+
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+  } 
+
+  /* ----------------------------------------header stayl star---------------------------------*/
+
+  .header{ 
+
+    background-color: red;
+  } 
+
+  .header__aside{ 
+
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 40px 0 40px;
+  }  
+  .header__logo{ 
+
+    text-decoration: none;
+
+  }
+  .header__logo__img{ 
+
+    width: 40px;
+    height: 40px;
+    vertical-align: middle; 
+    margin-right: 5px;
+  } 
+  .header__logo__title{ 
+
+    display: inline-block; 
+    vertical-align: middle;
+    color: #fff; 
+    font-size: 28px;
+    font-weight: 600;
+  } 
+  .header__logo_subtitle{ 
+
+    color: #333;
+  } 
+
+  /*----------------------------------------------hero stay start-----------------------------------*/ 
+   
+
+
+  .hero__inner__list{ 
+
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 0 auto ; 
+    margin-top: 70px;
+    padding: 0;
+  }
+  .js-item{  
+    margin: 0 auto;
+    padding: 20px 20px;
+    border: 2px solid #fff;
+    color: #fff; 
+    width: 300px;
+    height: 520px;
+    list-style-type: none; 
+    text-align: center;
+    margin-bottom: 20px; 
+    border-radius: 8px;  
+   background-color: darkgray;
+    
+  } 
+  .item-img{ 
+
+    width: 240px;
+    height: 240px; 
+    margin-bottom: 20px; 
+    border-radius: 8px;
+  } 
+  .item-title{ 
+
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+  
+  } 
+  .item-author{ 
+
+    font-size: 19px; 
+    color: gold; 
+     position: relative;
+    
+  } 
+  .item-author::before{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px; 
+    width: 20px;
+    background-image: url("../icons/author.svg");
+    background-repeat: no-repeat; 
+    content: "";
+  } 
+  .templet-link-block{ 
+
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    margin-bottom: 10px;
+  } 
+  .item-year{ 
+    position: relative; 
+    font-size: 18px;
+    font-weight: 400; 
+   color: #000;
+  }
+  .item-year::before{ 
+
+    position: absolute;
+    top: 0;
+    left: -25px;
+    height: 25px; 
+    width: 20px;
+    background-image: url("../icons/year.svg");
+    background-repeat: no-repeat; 
+    content: "";
+  } 
+
+  .item-pages{ 
+
+    position: relative; 
+    font-size: 18px;
+    font-weight: 400; 
+    color: #000;
+  } 
+  .item-pages::before{ 
+
+    position: absolute;
+    top: 0;
+    left: -25px;
+    height: 25px; 
+    width: 20px;
+    background-image: url("../icons/pages.svg");
+    background-repeat: no-repeat; 
+    content: "";
+  } 
+  .item-language{ 
+
+    position: relative; 
+    font-size: 18px;
+    font-weight: 400; 
+    color: #000; 
+  } 
+  .item-language::before{ 
+
+    position: absolute;
+    top: 0;
+    left: -25px;
+    height: 25px; 
+    width: 22px;
+    background-image: url("../icons/language.svg");
+    background-repeat: no-repeat; 
+    content: "";
+  } 
+  .item_link-bolck{ 
+
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+
+  } 
+
+  .item-link{ 
+
+    position: relative; 
+    color: aqua; 
+    font-size: 18px;
+    text-decoration: none;
+
+  } 
+
+  .item-link::before{ 
+
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    height: 25px; 
+    width: 22px;
+    background-image: url("../icons/wiki-icon.svg");
+    background-repeat: no-repeat; 
+    content: ""; 
+   
+  }  
+
+  .item-country{ 
+
+    position: relative; 
+    color: #fff; 
+    font-size: 18px;
+
+  } 
+
+  .item-country::before{ 
+
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    height: 25px; 
+    width: 25px;
+    background-image: url("../icons/wiki-logo.svg");
+    background-repeat: no-repeat; 
+    content: ""; 
+   
+  }  
+  .bookmarl-list{ 
+
+    display: flex; 
+    flex-direction: column; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0 auto; 
+
+  }

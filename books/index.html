@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Books</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container"> 
+
+          <div class="header__aside"> 
+               <a class="header__logo" href="#"> 
+                  <img class="header__logo__img" src="./icons/logo.png" alt="bookmark logo" width="40" height="40">
+                  <h2 class="header__logo__title">Online<span class="header__logo_subtitle">Books</span></h2>
+               </a> 
+
+                  <div class="header__bookmark"> 
+
+                    <button class="btn text-bg-light btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="bookmark-svg" src="./icons/bookmarks-fill.svg" alt="bookmark icon" width="40" height="40"></button>
+    
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             </div>
+              <div class="offcanvas-body">
+                   <ul class="bookmarl-list"> 
+
+
+                   </ul>
+               </div>
+                  </div>
+                  </div>
+                 </div> 
+
+
+  </header>
+
+<!--------------------------------------------------------------main---------------------------------->
+
+
+<main> 
+
+  <section class="hero"> 
+    <div class="container"> 
+        <div class="heri__form"> 
+            <form class="hero__form__block mt-4 js-form" method="post"> 
+              <div class="d-flex"> 
+                <input class="form-control w-90 me-2 js-inp-title" type="text" placeholder="sorch title" name="user__title"> 
+                <button class="btn btn-primary w-10">submit</button>
+              </div> 
+
+              <div class="d-flex mt-2"> 
+                  <input class="form-control me-2 js-inp-year" type="text" placeholder="year" name="user__year">
+                  <input class="form-control me-2 js-inp-author" type="text" placeholder="author" name="user__author">
+                   <select class="form-select js-sort-bookmark" name="user__sort" > 
+                    <option value="A-z">A-z</option>
+                    <option value="Z-a">Z-a</option>
+                    <option value="Star-year">Star-year</option>
+                    <option value="End-year">End-year</option>
+                    <option value="Few-sheets">Few-sheets</option>
+                    <option value="Many-sheets">Many-sheets</option>
+                   </select>
+              </div>
+
+
+            </form>
+        </div> 
+
+        <div class="hero__inner"> 
+             <ul class="hero__inner__list js-list"> 
+
+
+             </ul>
+        </div>
+    </div> 
+
+
+
+  </section> 
+
+  <template class="js-template"> 
+    <li class="js-item"> 
+       <img class="item-img" src="" alt="" width="150" height="150"> 
+      <img class="item-star mb-2 d-none js-star" src="./icons/star.svg" alt="" width="30" height="30">
+      <img class="item-star mb-2 js-star-border" src="./icons/star-border.svg" alt="" width="30" height="30">
+       <h2 class="item-title"></h2>  
+       <p class="item-author"></p> 
+       <div class="d-flex templet-link-block"> 
+          <span class="item-year"></span>
+          <span class="item-pages"></span>
+          <span class="item-language"></span>
+       </div> 
+       <div class=" item_link-bolck"> 
+          <a class="item-link" href="">wikipedia</a> 
+          <span class="item-country"></span>
+       </div> 
+
+       <button class="btn btn-primary mt-1 w-100 d-none js-dalet-btn">Dalete</button>
+
+    </li>
+
+  </template>
+</main>
+
+  
+
+  <!-- scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="./js/books.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
