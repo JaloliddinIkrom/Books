@@ -156,9 +156,6 @@
     book.forEach(item => {
          
        let newItem = elTempleList.cloneNode(true); 
-
-
-
        newItem.querySelector(".item-img").src = item.imageLink;  
 
        if(regeh.source != "(?:)" && regeh){ 
@@ -180,11 +177,12 @@
        newItem.querySelector(".item-language").textContent = item.language;
        newItem.querySelector(".item-link").href = item.link;
        newItem.querySelector(".item-country").textContent = item.country.slice(0, 10);
-       newItem.querySelector(".js-star-border").dataset.dataStarId = item.title; 
-
-          
-          
+       newItem.querySelector(".js-star-border").dataset.dataStarId = item.title;
+       newItem.querySelector(".js-star").dataset.dataStarId = item.title;
+       
+      
        elFragment.appendChild(newItem);
+
     }); 
 
     elList.appendChild(elFragment);
@@ -213,8 +211,8 @@
       newItem.querySelector(".js-star-border").classList.add("d-none"); 
       newItem.querySelector(".js-dalet-btn").classList.remove("d-none");
       newItem.querySelector(".js-dalet-btn").dataset.dataStarId = index;
+      newItem.querySelector(".js-star").classList.remove("d-none");
       
-         
       elFragment.appendChild(newItem);
    }); 
 
@@ -235,10 +233,8 @@
 
          bookArry.push(addBookmarkId);
          rederBookmarkList(bookArry, elBookmarkList);
-
-      }
-
-
+         
+      }  
    }
 
  });

@@ -110,7 +110,12 @@
     height: 240px; 
     margin-bottom: 20px; 
     border-radius: 8px;
-  } 
+  }  
+  .js-star-border:hover{ 
+
+       color: red;
+      
+  }
   .item-title{ 
 
     font-size: 22px;
